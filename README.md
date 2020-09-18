@@ -1,2 +1,3 @@
 # Senior-Schedule-JavaScript-Days
-Opens up correct schedule for the day during online school.
+Opens up correct self-made schedule sheet for the day during online school.
+https://jeremylau01.github.io/Senior-Schedule-JavaScript-Days/
