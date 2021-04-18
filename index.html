@@ -5,18 +5,27 @@
 function openTabDay() {
   var today = new Date();
   if (today.getDay()==2) {
-    window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=750944770","_self"); //Tu
+    window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=750944770","_self"); //Tu
   } else if (today.getDay()==6) {
-    var thismon = today.getDate() -5; // Change the today.getDay()==3         just change for testing :)
-    alert(thismon);
+    var thisMonday = today.getDate() -5; // Change the today.getDay()==3         just change for testing :)
+
+    var acWed = ["April 26", "May 17", "June 14"];
+    var d = new Date();
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var currentMonth = monthNames[d.getMonth()];
     
-    window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=1055785434","_self"); //W
+    var todayNorm = currentMonth + " " + thisMonday;
+    if (acWed.includes(todayNorm) {
+        window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=1055785434","_self") //Wed AC
+    } else {
+      window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=1367403035","_self") //Wed DEF
+    }
   } else if (today.getDay()==4) {
-    window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=1056301494","_self"); //Th
+    window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=1056301494","_self"); //Th
   } else if (today.getDay()==5) {
-    window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=1531572717","_self"); //F
+    window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=1531572717","_self"); //F
   } else {
-    window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=1083235559","_self"); //M
+    window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=1083235559","_self"); //M
   }
 }
 window.onload = openTabDay;
