@@ -7,6 +7,9 @@ function openTabDay() {
   if (today.getDay()==2) {
     window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=750944770","_self"); //Tu
   } else if (today.getDay()==3) {
+    var thismon = today.getDate() - 2;
+    alert(thismon);
+    
     window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=1055785434","_self"); //W
   } else if (today.getDay()==4) {
     window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=1056301494","_self"); //Th
