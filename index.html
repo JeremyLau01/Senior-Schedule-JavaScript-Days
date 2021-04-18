@@ -6,8 +6,8 @@ function openTabDay() {
   var today = new Date();
   if (today.getDay()==2) {
     window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=750944770","_self"); //Tu
-  } else if (today.getDay()==3) {
-    var thismon = today.getDate() - 2;
+  } else if (today.getDay()==0) {
+    var thismon = today.getDate() + 1; // Change the today.getDay()==3         just change for testing :)
     alert(thismon);
     
     window.open("https://docs.google.com/spreadsheets/d/1S9q844Vm9mzB72flFNNDKit7xw3ptrkLGBuqM4MunN0/edit#gid=1055785434","_self"); //W
