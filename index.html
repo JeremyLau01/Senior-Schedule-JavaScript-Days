@@ -6,16 +6,16 @@ function openTabDay() {
   var today = new Date();
   if (today.getDay()==2) {
     window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=750944770","_self"); //Tu
-  } else if (today.getDay()==6) {
-    var thisMonday = today.getDate() -5; // Change the today.getDay()==3         just change for testing :)
-    var acWed = ["April 26", "May 17", "June 14"];
+  } else if (today.getDay()==3) {
+    var thisMonday = today.getDate() -2;                   // Getting the day # of the week's Monday (if it is a Wednesday)
+    var acWed = ["April 26", "May 17", "June 14"];         // Array of all A(B)C Wednesdays' corresponding Mondays
     
     var d = new Date();
     var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var currentMonth = monthNames[d.getMonth()];
-    var todayNorm = currentMonth + " " + thisMonday;
+    var todayNorm = currentMonth + " " + thisMonday;          //e.g. todayNorm = "April 12" 
     
-    if (acWed.includes(todayNorm)) {
+    if (acWed.includes(todayNorm)) {                          // Check if the Monday is in the array of all A(B)C Wednesdays' corresponding Mondays
         window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=1055785434","_self") //Wed AC
   } else {
       window.open("https://docs.google.com/spreadsheets/d/138jUxbwtSW1sI5UOiJwgedJeZuaZdtLnUAtoMZXKYUQ/edit#gid=1367403035","_self") //Wed DEF
